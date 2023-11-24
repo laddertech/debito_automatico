@@ -1,0 +1,74 @@
+{
+    "nome": "RegistroX",
+    "campos": {
+        "X01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "X"
+        },
+        "X02": {
+            "nome": "codigo",
+            "posicao_inicio": 2,
+            "posicao_fim": 5,
+            "formato": "alfa"
+        },
+        "X03": {
+            "nome": "nome",
+            "posicao_inicio": 6,
+            "posicao_fim": 35,
+            "formato": "alfa"
+        },
+        "X04": {
+            "nome": "endereco",
+            "posicao_inicio": 36,
+            "posicao_fim": 65,
+            "formato": "alfa"
+        },
+        "X05": {
+            "nome": "numero",
+            "posicao_inicio": 66,
+            "posicao_fim": 70,
+            "formato": "alfa"
+        },
+        "X06": {
+            "nome": "cep_codigo",
+            "posicao_inicio": 71,
+            "posicao_fim": 75,
+            "formato": "alfa"
+        },
+        "X07": {
+            "nome": "cep_sufixo",
+            "posicao_inicio": 76,
+            "posicao_fim": 78,
+            "formato": "alfa"
+        },
+        "X08": {
+            "nome": "cidade",
+            "posicao_inicio": 79,
+            "posicao_fim": 98,
+            "formato": "num"
+        },
+        "X09": {
+            "nome": "estado",
+            "posicao_inicio": 99,
+            "posicao_fim": 100,
+            "formato": "alfa"
+        },
+        "X10": {
+            "nome": "situacao",
+            "posicao_inicio": 101,
+            "posicao_fim": 101,
+            "formato": "alfa",
+            "default": "A"
+        },
+        "X11": {
+            "nome": "reservado",
+            "posicao_inicio": 102,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

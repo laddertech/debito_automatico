@@ -1,0 +1,49 @@
+{
+    "nome": "RegistroB",
+    "campos": {
+        "B01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "B"
+        },
+        "B02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "B03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "B04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "B05": {
+            "nome": "data_operacao",
+            "posicao_inicio": 45,
+            "posicao_fim": 52,
+            "formato": "num"
+        },
+        "B06": {
+            "nome": "reservado",
+            "posicao_inicio": 53,
+            "posicao_fim": 149,
+            "formato": "alfa",
+            "default": ""
+        },
+        "B07": {
+            "nome": "codigo_movimento",
+            "posicao_inicio": 150,
+            "posicao_fim": 150,
+            "formato": "num"
+        }
+    }
+}

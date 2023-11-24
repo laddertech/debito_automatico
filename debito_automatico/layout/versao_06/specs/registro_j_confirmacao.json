@@ -1,0 +1,49 @@
+{
+    "nome": "RegistroJ",
+    "campos": {
+        "J01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "J"
+        },
+        "J02": {
+            "nome": "nsa",
+            "posicao_inicio": 2,
+            "posicao_fim": 7,
+            "formato": "num"
+        },
+        "J03": {
+            "nome": "data_geracao",
+            "posicao_inicio": 8,
+            "posicao_fim": 15,
+            "formato": "num"
+        },
+        "J04": {
+            "nome": "total_registros",
+            "posicao_inicio": 16,
+            "posicao_fim": 21,
+            "formato": "num"
+        },
+        "J05": {
+            "nome": "valor_total",
+            "posicao_inicio": 22,
+            "posicao_fim": 38,
+            "formato": "num"
+        },
+        "J06": {
+            "nome": "data_processamento",
+            "posicao_inicio": 39,
+            "posicao_fim": 46,
+            "formato": "num"
+        },
+        "J07": {
+            "nome": "reservado",
+            "posicao_inicio": 47,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

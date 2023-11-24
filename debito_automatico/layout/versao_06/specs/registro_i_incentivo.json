@@ -1,0 +1,55 @@
+{
+    "nome": "RegistroI",
+    "campos": {
+        "I01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "I"
+        },
+        "I02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "I03": {
+            "nome": "tipo_identificacao",
+            "posicao_inicio": 27,
+            "posicao_fim": 27,
+            "formato": "alfa"
+        },
+        "I04": {
+            "nome": "cpf_cnpj",
+            "posicao_inicio": 28,
+            "posicao_fim": 41,
+            "formato": "num"
+        },
+        "I05": {
+            "nome": "nome",
+            "posicao_inicio": 42,
+            "posicao_fim": 81,
+            "formato": "alfa"
+        },
+        "I06": {
+            "nome": "cidade",
+            "posicao_inicio": 82,
+            "posicao_fim": 111,
+            "formato": "alfa"
+        },
+        "I07": {
+            "nome": "estado",
+            "posicao_inicio": 112,
+            "posicao_fim": 113,
+            "formato": "alfa"
+        },
+        "I08": {
+            "nome": "reservado",
+            "posicao_inicio": 114,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

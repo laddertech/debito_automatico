@@ -1,0 +1,32 @@
+{
+    "nome": "RegistroT",
+    "campos": {
+        "T01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "T"
+        },
+        "T02": {
+            "nome": "total_registros",
+            "posicao_inicio": 2,
+            "posicao_fim": 7,
+            "formato": "num"
+        },
+        "T03": {
+            "nome": "valor_total",
+            "posicao_inicio": 8,
+            "posicao_fim": 24,
+            "decimais": 2,
+            "formato": "num"
+        },
+        "T04": {
+            "nome": "reservado",
+            "posicao_inicio": 25,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "nome": "RegistroF",
+    "campos": {
+        "F01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "F"
+        },
+        "F02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "F03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "F04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "F05": {
+            "nome": "data_vencimento_ou_debito",
+            "posicao_inicio": 45,
+            "posicao_fim": 52,
+            "formato": "num"
+        },
+        "F06": {
+            "nome": "valor_original_ou_debitado",
+            "posicao_inicio": 53,
+            "posicao_fim": 67,
+            "decimais": 2,
+            "formato": "num"
+        },
+        "F07": {
+            "nome": "codigo_retorno",
+            "posicao_inicio": 68,
+            "posicao_fim": 69,
+            "formato": "alfa"
+        },
+        "F08": {
+            "nome": "uso_empresa",
+            "posicao_inicio": 70,
+            "posicao_fim": 129,
+            "formato": "alfa"
+        },
+        "F09": {
+            "nome": "tipo_identificacao",
+            "posicao_inicio": 130,
+            "posicao_fim": 130,
+            "formato": "alfa",
+            "default": ""
+        },
+        "F10": {
+            "nome": "identificacao",
+            "posicao_inicio": 131,
+            "posicao_fim": 145,
+            "formato": "alfa",
+            "default": ""
+        },
+        "F11": {
+            "nome": "reservado",
+            "posicao_inicio": 146,
+            "posicao_fim": 149,
+            "formato": "alfa",
+            "default": ""
+        },
+        "F12": {
+            "nome": "codigo_movimento",
+            "posicao_inicio": 150,
+            "posicao_fim": 150,
+            "formato": "num"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "nome": "RegistroA",
+    "campos": {
+        "A01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "A"
+        },
+        "A02": {
+            "nome": "codigo_remessa",
+            "posicao_inicio": 2,
+            "posicao_fim": 2,
+            "formato": "num"
+        },
+        "A03": {
+            "nome": "codigo_convenio",
+            "posicao_inicio": 3,
+            "posicao_fim": 22,
+            "formato": "alfa"
+        },
+        "A04": {
+            "nome": "nome_empresa",
+            "posicao_inicio": 23,
+            "posicao_fim": 42,
+            "formato": "alfa"
+        },
+        "A05": {
+            "nome": "codigo_banco",
+            "posicao_inicio": 43,
+            "posicao_fim": 45,
+            "formato": "num"
+        },
+        "A06": {
+            "nome": "nome_banco",
+            "posicao_inicio": 46,
+            "posicao_fim": 65,
+            "formato": "alfa"
+        },
+        "A07": {
+            "nome": "data_geracao",
+            "posicao_inicio": 66,
+            "posicao_fim": 73,
+            "formato": "num"
+        },
+        "A08": {
+            "nome": "nsa",
+            "posicao_inicio": 74,
+            "posicao_fim": 79,
+            "formato": "num"
+        },
+        "A09": {
+            "nome": "versao_layout",
+            "posicao_inicio": 80,
+            "posicao_fim": 81,
+            "formato": "num",
+            "default": 6
+        },
+        "A10": {
+            "nome": "id_servico",
+            "posicao_inicio": 82,
+            "posicao_fim": 98,
+            "formato": "alfa",
+            "default": "DÉBITO AUTOMÁTICO"
+        },
+        "A11": {
+            "nome": "reservado",
+            "posicao_inicio": 99,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

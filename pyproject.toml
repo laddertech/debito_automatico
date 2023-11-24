@@ -1,0 +1,30 @@
+[project]
+name = "debido_automatico"
+version = "0.1.0"
+description = "Débito Automático"
+authors = [
+    {name = "Fabio Thomaz", email = "fabio@ladder.dev.br"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE.md"}
+keywords = ["Débito Automático", "Remessa", "Retorno"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/laddertech/debido-automatico.git"
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "coverage>=7.3.2",
+]

@@ -1,0 +1,68 @@
+{
+    "nome": "RegistroK",
+    "campos": {
+        "K01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "K"
+        },
+        "K02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "K03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "K04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "K05": {
+            "nome": "tipo_tratamento",
+            "posicao_inicio": 45,
+            "posicao_fim": 46,
+            "formato": "num"
+        },
+        "K06": {
+            "nome": "valor_a_debitar",
+            "posicao_inicio": 47,
+            "posicao_fim": 61,
+            "decimais": 2,
+            "formato": "num"
+        },
+        "K07": {
+            "nome": "codigo_receita",
+            "posicao_inicio": 61,
+            "posicao_fim": 65,
+            "formato": "alfa"
+        },
+        "K08": {
+            "nome": "tipo_identificacao",
+            "posicao_inicio": 66,
+            "posicao_fim": 66,
+            "formato": "num"
+        },
+        "K09": {
+            "nome": "identificacao",
+            "posicao_inicio": 67,
+            "posicao_fim": 81,
+            "formato": "alfa"
+        },
+        "K10": {
+            "nome": "reservado",
+            "posicao_inicio": 82,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

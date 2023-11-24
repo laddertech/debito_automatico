@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/__pypackages__/3.12/lib",
+        "debio_automatico"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/__pypackages__/3.12/lib",
+        "debio_automatico"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        ".",
+        "--ignore",
+        "__pypackages__",
+        "-s"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "${workspaceFolder}/__pypackages__/3.12/bin/pytest"
+  }
+  

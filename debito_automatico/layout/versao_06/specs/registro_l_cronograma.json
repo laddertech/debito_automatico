@@ -1,0 +1,43 @@
+{
+    "nome": "RegistroL",
+    "campos": {
+        "L01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "L"
+        },
+        "L02": {
+            "nome": "data_faturamento",
+            "posicao_inicio": 2,
+            "posicao_fim": 9,
+            "formato": "num"
+        },
+        "L03": {
+            "nome": "data_vencimento",
+            "posicao_inicio": 10,
+            "posicao_fim": 17,
+            "formato": "num"
+        },
+        "L04": {
+            "nome": "data_remessa_banco",
+            "posicao_inicio": 18,
+            "posicao_fim": 25,
+            "formato": "num"
+        },
+        "L05": {
+            "nome": "data_remessa_contas",
+            "posicao_inicio": 26,
+            "posicao_fim": 33,
+            "formato": "num"
+        },
+        "L06": {
+            "nome": "reservado",
+            "posicao_inicio": 34,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

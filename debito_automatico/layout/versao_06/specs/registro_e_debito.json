@@ -1,0 +1,84 @@
+{
+    "nome": "RegistroE",
+    "campos": {
+        "E01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "E"
+        },
+        "E02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "E03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "E04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "E05": {
+            "nome": "data_vencimento",
+            "posicao_inicio": 45,
+            "posicao_fim": 52,
+            "formato": "num"
+        },
+        "E06": {
+            "nome": "valor_debito",
+            "posicao_inicio": 53,
+            "posicao_fim": 67,
+            "formato": "num",
+            "decimais": 2,
+            "default": 0
+        },
+        "E07": {
+            "nome": "codigo_moeda",
+            "posicao_inicio": 68,
+            "posicao_fim": 69,
+            "formato": "alfa",
+            "default": "03"
+        },
+        "E08": {
+            "nome": "uso_empresa",
+            "posicao_inicio": 70,
+            "posicao_fim": 129,
+            "formato": "alfa"
+        },
+        "E09": {
+            "nome": "tipo_identificacao",
+            "posicao_inicio": 130,
+            "posicao_fim": 130,
+            "formato": "alfa",
+            "default": ""
+        },
+        "E10": {
+            "nome": "identificacao",
+            "posicao_inicio": 131,
+            "posicao_fim": 145,
+            "formato": "alfa",
+            "default": ""
+        },
+        "E11": {
+            "nome": "reservado",
+            "posicao_inicio": 146,
+            "posicao_fim": 149,
+            "formato": "alfa",
+            "default": ""
+        },
+        "E12": {
+            "nome": "codigo_movimento",
+            "posicao_inicio": 150,
+            "posicao_fim": 150,
+            "formato": "num"
+        }
+    }
+}

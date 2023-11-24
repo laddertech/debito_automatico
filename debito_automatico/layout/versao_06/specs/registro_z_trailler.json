@@ -1,0 +1,32 @@
+{
+    "nome": "RegistroZ",
+    "campos": {
+        "Z01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "Z"
+        },
+        "Z02": {
+            "nome": "total_registros",
+            "posicao_inicio": 2,
+            "posicao_fim": 7,
+            "formato": "num"
+        },
+        "Z03": {
+            "nome": "valor_total",
+            "posicao_inicio": 8,
+            "posicao_fim": 24,
+            "decimais": 2,
+            "formato": "num"
+        },
+        "Z04": {
+            "nome": "reservado",
+            "posicao_inicio": 25,
+            "posicao_fim": 150,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

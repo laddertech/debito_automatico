@@ -1,0 +1,55 @@
+{
+    "nome": "RegistroH",
+    "campos": {
+        "H01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "H"
+        },
+        "H02": {
+            "nome": "id_cliente_anterior",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "H03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "H04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "H05": {
+            "nome": "id_cliente_atual",
+            "posicao_inicio": 46,
+            "posicao_fim": 69,
+            "formato": "alfa"
+        },
+        "H06": {
+            "nome": "ocorrencia",
+            "posicao_inicio": 70,
+            "posicao_fim": 127,
+            "formato": "alfa"
+        },
+        "H07": {
+            "nome": "resevado",
+            "posicao_inicio": 128,
+            "posicao_fim": 149,
+            "formato": "alfa",
+            "default": ""
+        },
+        "H08": {
+            "nome": "codigo_movimento",
+            "posicao_inicio": 150,
+            "posicao_fim": 150,
+            "formato": "num"
+        }
+    }
+}

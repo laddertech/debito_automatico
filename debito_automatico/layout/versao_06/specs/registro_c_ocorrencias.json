@@ -1,0 +1,55 @@
+{
+    "nome": "RegistroC",
+    "campos": {
+        "C01": {
+            "nome": "codigo_registro",
+            "posicao_inicio": 1,
+            "posicao_fim": 1,
+            "formato": "alfa",
+            "default": "C"
+        },
+        "C02": {
+            "nome": "id_cliente",
+            "posicao_inicio": 2,
+            "posicao_fim": 26,
+            "formato": "alfa"
+        },
+        "C03": {
+            "nome": "agencia_debito",
+            "posicao_inicio": 27,
+            "posicao_fim": 30,
+            "formato": "alfa"
+        },
+        "C04": {
+            "nome": "id_cliente_banco",
+            "posicao_inicio": 31,
+            "posicao_fim": 44,
+            "formato": "alfa"
+        },
+        "C05": {
+            "nome": "ocorrencia1",
+            "posicao_inicio": 45,
+            "posicao_fim": 84,
+            "formato": "alfa"
+        },
+        "C06": {
+            "nome": "ocorrencia2",
+            "posicao_inicio": 85,
+            "posicao_fim": 124,
+            "formato": "alfa"
+        },
+        "C07": {
+            "nome": "reservado",
+            "posicao_inicio": 125,
+            "posicao_fim": 149,
+            "formato": "alfa",
+            "default": ""
+        },
+        "C08.3Q": {
+            "nome": "codigo_movimento",
+            "posicao_inicio": 150,
+            "posicao_fim": 150,
+            "formato": "num"
+        }
+    }
+}
