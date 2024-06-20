@@ -7,36 +7,36 @@ from debito_automatico import errors
 
 
 class Arquivo(object):
-    def __init__(self, banco, **kwargs):
+    def __init__(self, layout, **kwargs):
         """Arquivo Débito Automático."""
 
         self._registros = []
         self._total_linhas = 0
-        self.banco = banco
+        self.layout = layout
         arquivo = kwargs.get("arquivo")
 
         if isinstance(arquivo, codecs.StreamReaderWriter):
             self.carregar_retorno(arquivo)
         else:
-            self.header = self.banco.registros.RegistroA(**kwargs)
-            self.trailer = self.banco.registros.RegistroZ(**kwargs)
+            self.header = self.layout.registros.RegistroA(**kwargs)
+            self.trailer = self.layout.registros.RegistroZ(**kwargs)
             self.trailer.total_registros = 2
             self._total_linhas = 2
 
     def _carrega_registro(self, tipo: str, linha: Optional[str], **kwargs):
         match tipo:
-            case "B": seg = self.banco.registros.RegistroB(**kwargs)
-            case "C": seg = self.banco.registros.RegistroC(**kwargs)
-            case "D": seg = self.banco.registros.RegistroD(**kwargs)
-            case "E": seg = self.banco.registros.RegistroE(**kwargs)
-            case "F": seg = self.banco.registros.RegistroF(**kwargs)
-            case "H": seg = self.banco.registros.RegistroH(**kwargs)
-            case "I": seg = self.banco.registros.RegistroI(**kwargs)
-            case "J": seg = self.banco.registros.RegistroJ(**kwargs)
-            case "K": seg = self.banco.registros.RegistroK(**kwargs)
-            case "L": seg = self.banco.registros.RegistroL(**kwargs)
-            case "T": seg = self.banco.registros.RegistroT(**kwargs)
-            case "X": seg = self.banco.registros.RegistroX(**kwargs)
+            case "B": seg = self.layout.registros.RegistroB(**kwargs)
+            case "C": seg = self.layout.registros.RegistroC(**kwargs)
+            case "D": seg = self.layout.registros.RegistroD(**kwargs)
+            case "E": seg = self.layout.registros.RegistroE(**kwargs)
+            case "F": seg = self.layout.registros.RegistroF(**kwargs)
+            case "H": seg = self.layout.registros.RegistroH(**kwargs)
+            case "I": seg = self.layout.registros.RegistroI(**kwargs)
+            case "J": seg = self.layout.registros.RegistroJ(**kwargs)
+            case "K": seg = self.layout.registros.RegistroK(**kwargs)
+            case "L": seg = self.layout.registros.RegistroL(**kwargs)
+            case "T": seg = self.layout.registros.RegistroT(**kwargs)
+            case "X": seg = self.layout.registros.RegistroX(**kwargs)
             case _: seg = None
 
         if seg is not None:
@@ -52,14 +52,14 @@ class Arquivo(object):
             tipo_registro = linha[0]
 
             if tipo_registro == "A":
-                self.header = self.banco.registros.RegistroA()
+                self.header = self.layout.registros.RegistroA()
                 self.header.carregar(linha)
                 self._total_linhas += 1
                 
             self._carrega_registro(tipo=tipo_registro, linha=linha)
 
             if tipo_registro == "Z":
-                self.trailer = self.banco.registros.RegistroZ()
+                self.trailer = self.layout.registros.RegistroZ()
                 self.trailer.carregar(linha)
                 self._total_linhas += 1
                 self.trailer.total_registros = self._total_linhas
@@ -73,7 +73,7 @@ class Arquivo(object):
         return self._total_linhas
 
     def incluir_registro(self, **kwargs):
-        codigo_registro = kwargs.get("codigo_registro")
+        codigo_registro = kwargs.get("codigo_registro", "")
         self._carrega_registro(tipo=codigo_registro, linha='', **kwargs)
 
     def escrever(self, file_):
