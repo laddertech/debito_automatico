@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import codecs
+from decimal import Decimal
 from typing import Optional
 
 from debito_automatico import errors
@@ -21,15 +22,21 @@ class Arquivo(object):
             self.header = self.layout.registros.RegistroA(**kwargs)
             self.trailer = self.layout.registros.RegistroZ(**kwargs)
             self.trailer.total_registros = 2
+            self.trailer.valor_total = Decimal('0.00')
             self._total_linhas = 2
 
     def _carrega_registro(self, tipo: str, linha: Optional[str], **kwargs):
+        seg_value = Decimal('0.00')
         match tipo:
             case "B": seg = self.layout.registros.RegistroB(**kwargs)
             case "C": seg = self.layout.registros.RegistroC(**kwargs)
             case "D": seg = self.layout.registros.RegistroD(**kwargs)
-            case "E": seg = self.layout.registros.RegistroE(**kwargs)
-            case "F": seg = self.layout.registros.RegistroF(**kwargs)
+            case "E":
+                seg = self.layout.registros.RegistroE(**kwargs)
+                seg_value = seg.valor_debito
+            case "F":
+                seg = self.layout.registros.RegistroF(**kwargs)
+                seg_value = seg.valor_original_ou_debitado
             case "H": seg = self.layout.registros.RegistroH(**kwargs)
             case "I": seg = self.layout.registros.RegistroI(**kwargs)
             case "J": seg = self.layout.registros.RegistroJ(**kwargs)
@@ -46,6 +53,10 @@ class Arquivo(object):
             # Incrementar numero de registros
             self._total_linhas += 1
 
+            if hasattr(self, 'trailer'):
+                self.trailer.total_registros = self._total_linhas
+                self.trailer.valor_total += seg_value
+
     def carregar_retorno(self, arquivo):
         self._total_linhas = 0
         for linha in arquivo:
@@ -55,7 +66,7 @@ class Arquivo(object):
                 self.header = self.layout.registros.RegistroA()
                 self.header.carregar(linha)
                 self._total_linhas += 1
-                
+
             self._carrega_registro(tipo=tipo_registro, linha=linha)
 
             if tipo_registro == "Z":
@@ -67,7 +78,7 @@ class Arquivo(object):
     @property
     def registros(self):
         return self._registros
-    
+
     @property
     def total_linhas(self):
         return self._total_linhas
