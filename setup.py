@@ -2,14 +2,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='debito_automatico',
+    name='debito-automatico',
     version='0.02',
     author='Ladder Tecnologia',
     author_email='ladder@ladder.dev.br',
     url='https://github.com/laddertech/debito-automatico',
     packages=find_packages(),
     package_data={
-        'debito_automatico': ['bancos/*/*/*.json']
+        'debito_automatico': ['layout/*/*/*.json']
     },
     zip_safe=False,
     install_requires=[],
