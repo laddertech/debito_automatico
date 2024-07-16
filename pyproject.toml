@@ -1,5 +1,5 @@
 [project]
-name = "debido_automatico"
+name = "debito_automatico"
 version = "0.1.2"
 description = "Débito Automático"
 authors = [
@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/laddertech/debito-automatico.git"
+Repository = "https://github.com/laddertech/debito_automatico.git"
 
 [build-system]
 requires = ["pdm-pep517>=1.0.0"]
