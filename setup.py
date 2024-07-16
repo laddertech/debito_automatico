@@ -6,7 +6,7 @@ setup(
     version='0.02',
     author='Ladder Tecnologia',
     author_email='ladder@ladder.dev.br',
-    url='https://github.com/laddertech/debito_automatico',
+    url='https://github.com/laddertech/debito-automatico',
     packages=find_packages(),
     package_data={
         'debito_automatico': ['bancos/*/*/*.json']
@@ -18,7 +18,7 @@ setup(
     ],
     license='MIT',
     description='Classe para gerar arquivo de débito automático',
-    download_url='https://github.com/laddertech/debito_automatico',
+    download_url='https://github.com/laddertech/debito-automatico',
     scripts=[],
     classifiers=[],
     platforms='any',
