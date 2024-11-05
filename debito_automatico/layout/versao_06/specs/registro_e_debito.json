@@ -57,15 +57,13 @@
             "nome": "tipo_identificacao",
             "posicao_inicio": 130,
             "posicao_fim": 130,
-            "formato": "alfa",
-            "default": ""
+            "formato": "num"
         },
         "E10": {
             "nome": "identificacao",
             "posicao_inicio": 131,
             "posicao_fim": 145,
-            "formato": "alfa",
-            "default": ""
+            "formato": "num"
         },
         "E11": {
             "nome": "reservado",
