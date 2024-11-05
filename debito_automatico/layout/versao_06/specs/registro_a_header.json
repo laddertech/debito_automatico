@@ -62,7 +62,7 @@
             "posicao_inicio": 82,
             "posicao_fim": 98,
             "formato": "alfa",
-            "default": "DÉBITO AUTOMÁTICO"
+            "default": "DEBITO AUTOMATICO"
         },
         "A11": {
             "nome": "reservado",
